@@ -106,6 +106,90 @@
             </div>
         </div>
     </section>
+    
+    <!-- Виды проектов описания и ценники -->
+    <section id="Slugs" class="p-6 rounded-lg shadow-md mt-4">
+        <h2 class="text-2xl font-bold text-center mb-5">Виды проектов и ценники</h2>
+        <div class="flex flex-wrap">
+            <div class="w-full md:w-1/3 p-2">
+                <h3 class="text-xl font-semibold mb-2">Веб-сайты</h3>
+                <p>Цена: от 10 000 рублей</p>
+                <p>Описание: Разработка веб-сайтов для бизнеса и частных лиц.</p>
+            </div>
+            <div class="w-full md:w-1/3 p-2">
+                <h3 class="text-xl font-semibold mb-2">Лендинги</h3>
+                <p>Цена: от 5 000 рублей</p>
+                <p>Описание: Создание лендингов для привлечения клиентов.</p>
+            </div>
+            <div class="w-full md:w-1/3 p-2">
+                <h3 class="text-xl font-semibold mb-2">Интернет-магазины</h3>
+                <p>Цена: от 20 000 рублей</p>
+                <p>Описание: Разработка интернет-магазинов для онлайн-торговли.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Примитивный конструктор сайтов с примерными ценами-->
+    
+    <section id="constructor" class="p-6 bg-white rounded-lg shadow-md mt-4">
+        <h2 class="text-2xl font-bold text-center mb-5">Конструктор сайтов</h2>
+        <p>Создайте свой сайт с помощью нашего конструктора.</p>
+        <div class="flex flex-wrap">
+            <div class="w-full md:w-1/2 p-2">
+                <h3 class="text-xl font-semibold mb-2">Базовый пакет</h3>
+                <p>Цена: 5 000 рублей</p>
+                <p>Описание: Создание простого сайта.</p>
+            </div>
+            <div class="w-full md:w-1/2 p-2">
+                <h3 class="text-xl font-semibold mb-2">Продвинутый пакет</h3>
+                <p>Цена: 10 000 рублей</p>
+                <p>Описание: Создание сайта с расширенными функциями.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Шаги разработки -->
+    
+    <section id="Step" class="p-6 bg-white rounded-lg shadow-md mt-4">
+        <h2 class="text-2xl font-bold text-center mb-5">Шаги разработки</h2>
+        <div class="flex flex-wrap">
+            <div class="w-full md:w-1/3 p-2">
+                <h3 class="text-xl font-semibold mb-2">Шаг 1: Анализ</h3>
+                <p>Анализ требований и целей проекта.</p>
+            </div>
+            <div class="w-full md:w-1/3 p-2">
+                <h3 class="text-xl font-semibold mb-2">Шаг 2: Дизайн</h3>
+                <p>Создание дизайна и прототипа.</p>
+            </div>
+            <div class="w-full md:w-1/3 p-2">
+                <h3 class="text-xl font-semibold mb-2">Шаг 3: Разработка</h3>
+                <p>Написание кода и тестирование.</p>
+            </div>
+            <div class="w-full md:w-1/3 p-2">
+                <h3 class="text-xl font-semibold mb-2">Шаг 4: Запуск</h3>
+                <p>Запуск проекта и его настройка.</p>
+            </div>
+            <div class="w-full md:w-1/3 p-2">
+                <h3 class="text-xl font-semibold mb-2">Шаг 5: Поддержка</h3>
+                <p>Техническая поддержка и обновления.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+
+    <section id="reviews" class="p-6 bg-white rounded-lg shadow-md mt-4">
+        <h2 class="text-2xl font-bold text-center mb-5">Отзывы</h2>
+        <div class="flex flex-wrap">
+            <div class="w-full md:w-1/2 p-2">
+                <p>«Компания создала для нас отличный сайт, который помог нам увеличить продажи.»</p>
+                <p>— Джон Ду, владелец интернет-магазина</p>
+            </div>
+            <div class="w-full md:w-1/2 p-2">
+                <p>«Благодаря их услугам, наш бизнес стал более успешным в интернете.»</p>
+                <p>— Мария Смит, владелец веб-сайта</p>
+            </div>
+        </div>
+    </section>
 
     <section id="technologies" class="p-6 bg-white rounded-lg shadow-md mt-4">
         <h2 class="text-2xl font-bold text-center mb-5">Технологии</h2>
