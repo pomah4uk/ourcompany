@@ -90,53 +90,286 @@
         </section>
 
         <!-- Услуги -->
-        <section id="services" class="p-6 bg-white rounded-lg shadow-md mt-4">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center mb-12">Наши услуги</h2>
+        <section id="services" class="py-16 bg-white">
+            <div class="container mx-auto px-4 md:px-6">
+                <h2 class="text-3xl font-bold text-center mb-4">Наши услуги</h2>
+                <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">Предоставляем полный спектр услуг по разработке и поддержке веб-проектов любой сложности</p>
+                
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="card">
-                        <ul class="list-none pl-5">
-                            <li><span class="text-green-500 mr-2 mb-2"><b>✓</b></span>Разработка сайтов</li>
-                            <li><span class="text-green-500 mr-2 mb-2"><b>✓</b></span>Создание лендингов</li>
-                            <li><span class="text-green-500 mr-2 mb-2"><b>✓</b></span>Интернет магазины</li>
+                    <!-- Разработка -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow border border-gray-100">
+                        <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                                </svg>
+                    </div>
+                        <h3 class="text-xl font-bold mb-4 text-gray-800">Разработка сайтов</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2 mt-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg></span>
+                                <span class="text-gray-600">Сайты-визитки от 15 000 ₽</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2 mt-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg></span>
+                                <span class="text-gray-600">Лендинги от 15 000 ₽</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2 mt-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg></span>
+                                <span class="text-gray-600">Интернет-магазины от 50 000 ₽</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2 mt-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg></span>
+                                <span class="text-gray-600">Корпоративные сайты от 30 000 ₽</span>
+                            </li>
+                    </ul>
+            </div>
+
+                    <!-- Поддержка -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow border border-gray-100">
+                        <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                                </svg>
+            </div>
+                        <h3 class="text-xl font-bold mb-4 text-gray-800">Поддержка и доработка</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2 mt-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg></span>
+                                <span class="text-gray-600">Доработка сайта от 5 000 ₽</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2 mt-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg></span>
+                                <span class="text-gray-600">Перенос на другой хостинг от 3 000 ₽</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2 mt-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg></span>
+                                <span class="text-gray-600">Сопровождение от 10 000 ₽/мес</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2 mt-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg></span>
+                                <span class="text-gray-600">WordPress, Joomla поддержка</span>
+                            </li>
                         </ul>
                     </div>
-                    <div class="card">
-                        <ul class="list-none pl-5">
-                            <li><span class="text-green-500 mr-2 mb-2"><b>✓</b></span>Переделка сайтов</li>
-                            <li><span class="text-green-500 mr-2 mb-2"><b>✓</b></span>Перенос на новые платформы</li>
-                            <li><span class="text-green-500 mr-2 mb-2"><b>✓</b></span>Работа с WordPress, Joomla</li>
+
+                    <!-- Дополнительные услуги -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow border border-gray-100">
+                        <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-gray-800">Интеграции и разработка</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2 mt-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg></span>
+                                <span class="text-gray-600">Платёжные системы от 5 000 ₽</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2 mt-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg></span>
+                                <span class="text-gray-600">Интеграция CRM от 10 000 ₽</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2 mt-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg></span>
+                                <span class="text-gray-600">Разработка скриптов от 1 000 ₽</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2 mt-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg></span>
+                                <span class="text-gray-600">API интеграции от 15 000 ₽</span>
+                            </li>
                         </ul>
                     </div>
-                    <div class="card">
-                        <ul class="list-none pl-5">
-                            <li><span class="text-green-500 mr-2 mb-2"><b>✓</b></span>Добавление платежных систем</li>
-                            <li><span class="text-green-500 mr-2 mb-2"><b>✓</b></span>Интеграция функционала стороних сервисов</li>
-                            <li><span class="text-green-500 mr-2 mb-2"><b>✓</b></span>Работа с базами данных</li>
-                        </ul>
-                    </div>
+                </div>
+
+                <div class="mt-12 text-center">
+                    <p class="text-gray-600 mb-6">Все цены указаны ориентировочно. Финальная стоимость зависит от сложности проекта</p>
+                    <a href="#contact" class="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors">
+                        Обсудить проект
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </section>
 
         <!-- Виды проектов описания и ценники -->
-        <section id="Slugs" class="p-6 bg-white rounded-lg shadow-md mt-4">
-            <h2 class="text-2xl font-bold text-center mb-5">Виды проектов и ценники</h2>
-            <div class="flex flex-wrap">
-                <div class="w-full md:w-1/3 p-2">
-                    <h3 class="text-xl font-semibold mb-2">Веб-сайты</h3>
-                    <p>Цена: от 10 000 рублей</p>
-                    <p>Описание: Разработка веб-сайтов для бизнеса и частных лиц.</p>
+        <section id="prices" class="p-6 bg-white rounded-lg shadow-md mt-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Прайс-лист на услуги</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+                <!-- Карточка услуги -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 border border-gray-100">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Сайт-визитка</h3>
+                        <span class="text-lg font-bold text-green-600">от 15 000 ₽</span>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-4">Идеальное решение для представления вашей компании в интернете</p>
+                    <div class="border-t border-gray-100 pt-4">
+                        <ul class="space-y-2">
+                            <li class="flex items-center text-sm text-gray-600">
+                                <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                До 5 страниц
+                            </li>
+                            <li class="flex items-center text-sm text-gray-600">
+                                <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Адаптивный дизайн
+                            </li>
+                        </ul>
+                    </div>
+    </div>
+
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 border border-gray-100">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Интернет-магазин</h3>
+                        <span class="text-lg font-bold text-green-600">от 50 000 ₽</span>
                 </div>
-                <div class="w-full md:w-1/3 p-2">
-                    <h3 class="text-xl font-semibold mb-2">Лендинги</h3>
-                    <p>Цена: от 5 000 рублей</p>
-                    <p>Описание: Создание лендингов для привлечения клиентов.</p>
+                    <p class="text-gray-600 text-sm mb-4">Полноценная платформа для онлайн-торговли</p>
+                    <div class="border-t border-gray-100 pt-4">
+                    <ul class="space-y-2">
+                            <li class="flex items-center text-sm text-gray-600">
+                                <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Каталог товаров
+                            </li>
+                            <li class="flex items-center text-sm text-gray-600">
+                                <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Корзина и оплата
+                            </li>
+                    </ul>
                 </div>
-                <div class="w-full md:w-1/3 p-2">
-                    <h3 class="text-xl font-semibold mb-2">Интернет-магазины</h3>
-                    <p>Цена: от 20 000 рублей</p>
-                    <p>Описание: Разработка интернет-магазинов для онлайн-торговли.</p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 border border-gray-100">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Сайт под ключ</h3>
+                        <span class="text-lg font-bold text-green-600">от 30 000 ₽</span>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-4">Индивидуальная разработка любой сложности</p>
+                    <div class="border-t border-gray-100 pt-4">
+                    <ul class="space-y-2">
+                            <li class="flex items-center text-sm text-gray-600">
+                                <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Уникальный дизайн
+                            </li>
+                            <li class="flex items-center text-sm text-gray-600">
+                                <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Любой функционал
+                            </li>
+                    </ul>
+                </div>
+            </div>
+
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 border border-gray-100">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Лендинг</h3>
+                        <span class="text-lg font-bold text-green-600">от 15 000 ₽</span>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-4">Одностраничный сайт для продвижения товара или услуги</p>
+                    <div class="border-t border-gray-100 pt-4">
+                        <ul class="space-y-2">
+                            <li class="flex items-center text-sm text-gray-600">
+                                <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Высокая конверсия
+                            </li>
+                            <li class="flex items-center text-sm text-gray-600">
+                                <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Формы захвата
+                            </li>
+                        </ul>
+            </div>
+        </div>
+
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 border border-gray-100">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">WordPress сайт</h3>
+                        <span class="text-lg font-bold text-green-600">от 15 000 ₽</span>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-4">Создание сайта на популярной CMS</p>
+                    <div class="border-t border-gray-100 pt-4">
+                        <ul class="space-y-2">
+                            <li class="flex items-center text-sm text-gray-600">
+                                <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Удобная админка
+                            </li>
+                            <li class="flex items-center text-sm text-gray-600">
+                                <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                SEO-оптимизация
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 border border-gray-100">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Доп. услуги</h3>
+                        <span class="text-lg font-bold text-green-600">от 1 000 ₽</span>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-4">Дополнительные работы по сайту</p>
+                    <div class="border-t border-gray-100 pt-4">
+                        <ul class="space-y-2">
+                            <li class="flex items-center text-sm text-gray-600">
+                                <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Подключение домена (от 3 000 ₽)
+                            </li>
+                            <li class="flex items-center text-sm text-gray-600">
+                                <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Сопровождение (от 10 000 ₽)
+                            </li>
+                            <li class="flex items-center text-sm text-gray-600">
+                                <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Скрипты (от 1 000 ₽)
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -161,44 +394,193 @@
 
         <!-- Шаги разработки -->
         
-        <section id="Step" class="p-6 bg-white rounded-lg shadow-md mt-4">
-            <h2 class="text-2xl font-bold text-center mb-5">Шаги разработки</h2>
-            <div class="flex flex-wrap">
-                <div class="w-full md:w-1/3 p-2">
-                    <h3 class="text-xl font-semibold mb-2">Шаг 1: Анализ</h3>
-                    <p>Анализ требований и целей проекта.</p>
+        <section id="Step" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-4">Этапы разработки</h2>
+                <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">Прозрачный процесс создания вашего проекта от начала до запуска</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+                    <!-- Шаг 1 -->
+                    <div class="relative bg-blue-50 rounded-xl shadow-lg p-6 hover:shadow-xl transition-all border border-blue-100">
+                        <div class="absolute -top-4 left-6 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">
+                            1
+                        </div>
+                        <div class="w-16 h-16 mb-6 text-blue-500">
+                            <svg class="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-blue-900">Анализ проекта</h3>
+                        <p class="text-blue-700">Детальный анализ требований, целей и задач вашего проекта.</p>
+                    </div>
+
+                    <!-- Шаг 2 -->
+                    <div class="relative bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all border border-gray-100">
+                        <div class="absolute -top-4 left-6 w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center font-bold">
+                            2
+                        </div>
+                        <div class="w-16 h-16 mb-6 text-purple-500">
+                            <svg class="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Дизайн</h3>
+                        <p class="text-gray-600">Разработка уникального дизайна и прототипа.</p>
+                    </div>
+
+                    <!-- Шаг 3 -->
+                    <div class="relative bg-green-50 rounded-xl shadow-lg p-6 hover:shadow-xl transition-all border border-green-100">
+                        <div class="absolute -top-4 left-6 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold">
+                            3
+                    </div>
+                        <div class="w-16 h-16 mb-6 text-green-500">
+                            <svg class="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-green-900">Разработка</h3>
+                        <p class="text-green-700">Написание чистого и оптимизированного кода.</p>
+                    </div>
+
+                    <!-- Шаг 4 -->
+                    <div class="relative bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all border border-gray-100">
+                        <div class="absolute -top-4 left-6 w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center font-bold">
+                            4
+                        </div>
+                        <div class="w-16 h-16 mb-6 text-red-500">
+                            <svg class="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Запуск</h3>
+                        <p class="text-gray-600">Развертывание проекта на хостинге, настройка сервера и финальное тестирование.</p>
+                    </div>
+
+                    <!-- Шаг 5 -->
+                    <div class="relative bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all border border-gray-100">
+                        <div class="absolute -top-4 left-6 w-8 h-8 bg-yellow-500 text-white rounded-full flex items-center justify-center font-bold">
+                            5
+                        </div>
+                        <div class="w-16 h-16 mb-6 text-yellow-500">
+                            <svg class="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Поддержка</h3>
+                        <p class="text-gray-600">Техническая поддержка, обновления и оптимизация работы вашего проекта.</p>
+                    </div>
                 </div>
-                <div class="w-full md:w-1/3 p-2">
-                    <h3 class="text-xl font-semibold mb-2">Шаг 2: Дизайн</h3>
-                    <p>Создание дизайна и прототипа.</p>
-                </div>
-                <div class="w-full md:w-1/3 p-2">
-                    <h3 class="text-xl font-semibold mb-2">Шаг 3: Разработка</h3>
-                    <p>Написание кода и тестирование.</p>
-                </div>
-                <div class="w-full md:w-1/3 p-2">
-                    <h3 class="text-xl font-semibold mb-2">Шаг 4: Запуск</h3>
-                    <p>Запуск проекта и его настройка.</p>
-                </div>
-                <div class="w-full md:w-1/3 p-2">
-                    <h3 class="text-xl font-semibold mb-2">Шаг 5: Поддержка</h3>
-                    <p>Техническая поддержка и обновления.</p>
+
+                <!-- Дополнительная информация -->
+                <div class="mt-12 text-center">
+                    <p class="text-gray-600 mb-6">Каждый этап разработки тщательно документируется и согласовывается с клиентом</p>
+                    <a href="#contact" class="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors">
+                        Начать проект
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </section>
 
         <!-- Отзывы -->
 
-        <section id="reviews" class="p-6 bg-white rounded-lg shadow-md mt-4">
-            <h2 class="text-2xl font-bold text-center mb-5">Отзывы</h2>
-            <div class="flex flex-wrap">
-                <div class="w-full md:w-1/2 p-2">
-                    <p>"Компания создала для нас отличный сайт, который помог нам увеличить продажи."</p>
-                    <p>— Джон Ду, владелец интернет-магазина</p>
-                </div>
-                <div class="w-full md:w-1/2 p-2">
-                    <p>"Благодаря их услугам, наш бизнес стал более успешным в интернете."</p>
-                    <p>— Мария Смит, владелец веб-сайта</p>
+        <section id="reviews" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-4">Отзывы клиентов</h2>
+                <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">Что говорят о нас наши клиенты</p>
+
+                    <div class="relative">
+                    <!-- Кнопки навигации -->
+                    <button id="prevButton" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-translate-x-8 bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition-all z-10 hidden md:block">
+                        <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                        </svg>
+                        </button>
+                    
+                    <button id="nextButton" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 lg:translate-x-8 bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition-all z-10 hidden md:block">
+                        <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                    </button>
+
+                    <!-- Контейнер слайдера -->
+                    <div class="overflow-hidden">
+                        <div id="reviewsSlider" class="flex transition-transform duration-300 ease-in-out">
+                            <!-- Отзыв 1 -->
+                            <div class="min-w-full md:min-w-[50%] lg:min-w-[33.333%] px-4">
+                                <div class="bg-white rounded-xl shadow-lg p-6 h-full border border-gray-100">
+                                    <div class="flex items-center mb-4">
+                                        <div class="flex text-yellow-400">
+                                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                            </svg>
+                                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                            </svg>
+                                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                            </svg>
+                                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                            </svg>
+                                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="text-gray-600 mb-4">"Компания создала для нас отличный сайт, который помог нам увеличить продажи. Особенно порадовала оперативность в работе и внимание к деталям."</p>
+                                    <div class="flex items-center">
+                                        <div class="flex-shrink-0">
+                                            <div class="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center">
+                                                <span class="text-xl font-bold text-gray-600">А</span>
+                                            </div>
+                                        </div>
+                                        <div class="ml-4">
+                                            <p class="font-semibold text-gray-800">Александр Петров</p>
+                                            <p class="text-gray-500 text-sm">Владелец интернет-магазина</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Отзыв 2 -->
+                            <div class="min-w-full md:min-w-[50%] lg:min-w-[33.333%] px-4">
+                                <div class="bg-white rounded-xl shadow-lg p-6 h-full border border-gray-100">
+                                    <div class="flex items-center mb-4">
+                                        <div class="flex text-yellow-400">
+                                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                            </svg>
+                                            <!-- Повторить для остальных звезд -->
+                                        </div>
+                                    </div>
+                                    <p class="text-gray-600 mb-4">"Благодаря их услугам, наш бизнес стал более успешным в интернете. Профессиональный подход и качественное исполнение."</p>
+                                    <div class="flex items-center">
+                                        <div class="flex-shrink-0">
+                                            <div class="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center">
+                                                <span class="text-xl font-bold text-gray-600">М</span>
+                                            </div>
+                                        </div>
+                                        <div class="ml-4">
+                                            <p class="font-semibold text-gray-800">Мария Иванова</p>
+                                            <p class="text-gray-500 text-sm">Директор компании</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Добавьте больше отзывов по аналогии -->
+                        </div>
+                    </div>
+
+                    <!-- Индикаторы -->
+                    <div class="flex justify-center mt-8 space-x-2">
+                        <button class="w-2 h-2 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors duration-200 slider-dot active"></button>
+                        <button class="w-2 h-2 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors duration-200 slider-dot"></button>
+                        <button class="w-2 h-2 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors duration-200 slider-dot"></button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -406,7 +788,6 @@
                 </div>
             </div>
         </section>
-    </div>
 
     <footer class="bg-gradient-to-l from-gray-700 to-gray-800 text-white py-8">
         <div class="container mx-auto px-6">
@@ -437,7 +818,60 @@
             </div>
         </div>
     </footer>
+    <script>
+            // Добавьте этот скрипт в конец файла или в отдельный файл JavaScript
+            document.addEventListener('DOMContentLoaded', function() {
+                const slider = document.getElementById('reviewsSlider');
+                const slides = slider.children;
+                const prevButton = document.getElementById('prevButton');
+                const nextButton = document.getElementById('nextButton');
+                const dots = document.querySelectorAll('.slider-dot');
+                
+                let currentSlide = 0;
+                const slidesToShow = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
+                const slideWidth = 100 / slidesToShow;
+                
+                // Устанавливаем начальную ширину слайдов
+                Array.from(slides).forEach(slide => {
+                    slide.style.width = `${slideWidth}%`;
+                });
 
+                function updateSlider() {
+                    slider.style.transform = `translateX(-${currentSlide * slideWidth}%)`;
+                    
+                    // Обновляем активный индикатор
+                    dots.forEach((dot, index) => {
+                        dot.classList.toggle('bg-blue-500', index === currentSlide);
+                    });
+                }
+
+                prevButton.addEventListener('click', () => {
+                    currentSlide = Math.max(currentSlide - 1, 0);
+                    updateSlider();
+                });
+
+                nextButton.addEventListener('click', () => {
+                    currentSlide = Math.min(currentSlide + 1, slides.length - slidesToShow);
+                    updateSlider();
+                });
+
+                // Обработка клика по индикаторам
+                dots.forEach((dot, index) => {
+                    dot.addEventListener('click', () => {
+                        currentSlide = index;
+                        updateSlider();
+                    });
+                });
+
+                // Обновляем слайдер при изменении размера окна
+                window.addEventListener('resize', () => {
+                    const newSlidesToShow = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
+                    if (newSlidesToShow !== slidesToShow) {
+                        location.reload();
+                    }
+                });
+            });
+        </script>
     <script>
         // Мобильное меню
         document.getElementById('nav-toggle').addEventListener('click', function() {
