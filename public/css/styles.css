@@ -1,0 +1,75 @@
+/* Анимации и переходы */
+.transition-all {
+    transition: all 0.3s ease;
+}
+
+.scale-on-hover:hover {
+    transform: scale(1.05);
+}
+
+/* Навигация */
+.nav-hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+header {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.header-hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+/* Карточки и иконки */
+.card {
+    @apply border rounded-lg overflow-hidden shadow-lg transition-all;
+    min-height: 400px;
+}
+
+.stat-card {
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature-item {
+    min-height: 120px;
+}
+
+.service-card {
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-card {
+    min-height: 500px;
+}
+
+.portfolio-card {
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-wrapper {
+    @apply w-20 h-20 flex items-center justify-center transition-all scale-on-hover;
+}
+
+/* Формы */
+.form-input {
+    @apply border rounded p-2 w-full focus:ring-2 focus:ring-yellow-400 focus:outline-none;
+}
+
+.btn {
+    @apply px-4 py-2 rounded transition-all;
+}
+
+.btn-primary {
+    @apply bg-yellow-500 text-white hover:bg-yellow-600;
+}

@@ -5,55 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>OurCompany - Разработка сайтов</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        /* Анимации и переходы */
-        .transition-all {
-            transition: all 0.3s ease;
-        }
-
-        .scale-on-hover:hover {
-            transform: scale(1.05);
-        }
-        
-        /* Навигация */
-        .nav-hidden {
-            transform: translateY(-100%);
-            opacity: 0;
-        }
-
-        header {
-            transition: transform 0.3s ease, opacity 0.3s ease;
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .header-hidden {
-            transform: translateY(-100%);
-            opacity: 0;
-        }
-
-        /* Карточки и иконки */
-        .card {
-            @apply border rounded-lg overflow-hidden shadow-lg transition-all;
-        }
-
-        .icon-wrapper {
-            @apply w-20 h-20 flex items-center justify-center transition-all scale-on-hover;
-        }
-
-        /* Формы */
-        .form-input {
-            @apply border rounded p-2 w-full focus:ring-2 focus:ring-yellow-400 focus:outline-none;
-        }
-
-        .btn {
-            @apply px-4 py-2 rounded transition-all;
-        }
-
-        .btn-primary {
-            @apply bg-yellow-500 text-white hover:bg-yellow-600;
-        }
-    </style>
+    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
     <meta name="description" content="Профессиональная разработка сайтов любой сложности: от лендингов до CRM-систем. Помощь с существующими сайтами, перенос на другой хостинг, интеграция CRM.">
     <meta name="keywords" content="разработка сайтов, лендинги, интернет-магазины, админ-панели, CRM-системы, автоматизация бизнеса">
     <meta name="author" content="OurCompany">
@@ -80,12 +32,102 @@
     </header>
         
     <!-- О нас -->
-    <section id="about" class="min-h-screen flex items-center justify-center bg-cover bg-center relative" style="background-image: url('/image/welcome.jpg')">
+    <section id="about" class="pt-20 min-h-screen flex items-center justify-center bg-cover bg-center relative" style="background-image: url('/image/welcome.jpg')">
         <div class="absolute inset-0 bg-black bg-opacity-50"></div>
         <div class="container mx-auto px-6 relative z-10 text-white">
-            <h2 class="text-4xl font-bold mb-6">О нас</h2>
-            <p class="text-xl mb-8 max-w-2xl">Мы специализируемся на разработке современных веб-решений с 5-летним опытом в индустрии. От простых лендингов до сложных CRM-систем - мы создаем эффективные цифровые решения для вашего бизнеса.</p>
-            <a href="#contact" class="p-5 rounded bg-black-100 hover:bg-black-900" style="background: rgba(0,0,0, .7)">Отправить заявку</a>
+            <div class="space-y-4 text-center" style="max-width:50%; margin: auto">
+                <p class="text-xl leading-relaxed">Мы специализируемся на разработке современных веб-решений с 5-летним опытом в индустрии. От простых лендингов до сложных CRM-систем - мы создаем эффективные цифровые решения для вашего бизнеса.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+
+                    <div class="grid grid-cols-2 gap-6 mt-8">
+                        <div class="stat-card bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-20 transition-all cursor-pointer">
+                            <div class="text-3xl font-bold text-yellow-400 counter" data-target="150">0</div>
+                            <p class="text-sm mt-2">Завершенных проектов</p>
+                        </div>
+                        <div class="stat-card bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-20 transition-all cursor-pointer">
+                            <div class="text-3xl font-bold text-yellow-400 counter" data-target="98">0</div>
+                            <p class="text-sm mt-2">Довольных клиентов</p>
+                        </div>
+                        <div class="stat-card bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-20 transition-all cursor-pointer">
+                            <div class="text-3xl font-bold text-yellow-400 counter" data-target="5">0</div>
+                            <p class="text-sm mt-2">Лет опыта</p>
+                        </div>
+                        <div class="stat-card bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-20 transition-all cursor-pointer">
+                            <div class="text-3xl font-bold text-yellow-400 counter" data-target="24">0</div>
+                            <p class="text-sm mt-2">Текущих проектов</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6 mt-8">
+                        <h3 class="text-2xl font-semibold">Наши преимущества</h3>
+                        <div class="space-y-4">
+                            <div class="feature-item flex items-center space-x-4 bg-white bg-opacity-10 p-4 rounded-lg hover:bg-opacity-20 transition-all cursor-pointer">
+                                <svg class="w-8 h-8 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold">Быстрая разработка</h4>
+                                    <p class="text-sm text-gray-300">Среднее время разработки проекта - 2 недели</p>
+                                </div>
+                            </div>
+                            <div class="feature-item flex items-center space-x-4 bg-white bg-opacity-10 p-4 rounded-lg hover:bg-opacity-20 transition-all cursor-pointer">
+                                <svg class="w-8 h-8 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold">Гарантия качества</h4>
+                                    <p class="text-sm text-gray-300">6 месяцев бесплатной поддержки</p>
+                                </div>
+                            </div>
+                            <div class="feature-item flex items-center space-x-4 bg-white bg-opacity-10 p-4 rounded-lg hover:bg-opacity-20 transition-all cursor-pointer">
+                                <svg class="w-8 h-8 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold">Гибкая оплата</h4>
+                                    <p class="text-sm text-gray-300">Возможность оплаты проекта частями</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <a href="#contact" class="inline-flex items-center px-6 py-3 bg-yellow-500 text-white font-semibold rounded-lg hover:bg-yellow-600 transition-colors group mb-4">
+                            Отправить заявку
+                            <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hidden lg:block">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="space-y-4">
+                            <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-20 transition-all transform hover:-translate-y-1">
+                                <h4 class="font-semibold text-yellow-400">Веб-разработка</h4>
+                                <p class="text-sm mt-2">Создание современных и функциональных веб-сайтов любой сложности</p>
+                            </div>
+                            <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-20 transition-all transform hover:-translate-y-1 translate-y-4">
+                                <h4 class="font-semibold text-yellow-400">UI/UX Дизайн</h4>
+                                <p class="text-sm mt-2">Разработка удобных и привлекательных пользовательских интерфейсов</p>
+                            </div>
+                        </div>
+                        <div class="space-y-4 translate-y-8">
+                            <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-20 transition-all transform hover:-translate-y-1">
+                                <h4 class="font-semibold text-yellow-400">Поддержка</h4>
+                                <p class="text-sm mt-2">Техническая поддержка и обслуживание веб-проектов</p>
+                            </div>
+                            <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-20 transition-all transform hover:-translate-y-1">
+                                <h4 class="font-semibold text-yellow-400">Оптимизация</h4>
+                                <p class="text-sm mt-2">SEO-оптимизация и улучшение производительности сайтов</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -97,7 +139,7 @@
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Разработка -->
-                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow border border-gray-100">
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow border border-gray-100 service-card">
                     <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
                         <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
@@ -141,7 +183,7 @@
                 </div>
 
                 <!-- Поддержка -->
-                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow border border-gray-100">
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow border border-gray-100 service-card">
                     <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6">
                         <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
@@ -185,7 +227,7 @@
                 </div>
 
                 <!-- Дополнительные услуги -->
-                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow border border-gray-100">
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow border border-gray-100 service-card">
                     <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
                         <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"/>
@@ -396,25 +438,25 @@
     <section id="portfolio" class="p-6 bg-white rounded-lg shadow-md mt-4">
         <h2 class="text-2xl font-bold text-center">Портфолио</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div class="card">
+            <div class="card portfolio-card">
                 <a href="http://example1.com" class="block border rounded-lg overflow-hidden shadow-lg">
                     <img src="" alt="Site 1" class="w-full">
                     <p class="p-2">Site 1</p>
                 </a>
             </div>
-            <div class="card">
+            <div class="card portfolio-card">
                 <a href="http://example2.com" class="block border rounded-lg overflow-hidden shadow-lg">
                     <img src="" alt="Site 2" class="w-full">
                     <p class="p-2">Site 2</p>
                 </a>
             </div>
-            <div class="card">
+            <div class="card portfolio-card">
                 <a href="http://example3.com" class="block border rounded-lg overflow-hidden shadow-lg">
                     <img src="" alt="Site 3" class="w-full">
                     <p class="p-2">Site 3</p>
                 </a>
             </div>
-            <div class="card">
+            <div class="card portfolio-card">
                 <a href="http://example4.com" class="block border rounded-lg overflow-hidden shadow-lg">
                     <img src="path/to/site4.png" alt="Site 4" class="w-full">
                     <p class="p-2">Site 4</p>
@@ -432,7 +474,7 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Разработчик 1 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-xl transition-all duration-300">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-xl transition-all duration-300 team-card">
                     <div class="relative overflow-hidden">
                         <img src="{{ asset('image/team.jpg') }}" 
                              alt="Frontend Developer" 
@@ -443,7 +485,7 @@
                                     <a href="#" class="text-white hover:text-blue-400 transition-colors">
                                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                             <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                                                                               </svg>
+                                        </svg>
                                     </a>
                                     <a href="#" class="text-white hover:text-blue-400 transition-colors">
                                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -455,14 +497,14 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Александр Петров</h3>
-                        <p class="text-blue-600 font-medium mb-4">Frontend Developer</p>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Фалолеев Михаил</h3>
+                        <p class="text-blue-600 font-medium mb-4">Frontend Разработчик</p>
                         <p class="text-gray-600">Специалист по созданию современных и отзывчивых пользовательских интерфейсов</p>
                     </div>
                 </div>
 
                 <!-- Разработчик 2 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-xl transition-all duration-300">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-xl transition-all duration-300 team-card">
                     <div class="relative overflow-hidden">
                         <img src="{{ asset('image/team.jpg') }}" 
                              alt="Backend Developer" 
@@ -485,14 +527,14 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Мария Иванова</h3>
-                        <p class="text-green-600 font-medium mb-4">Backend Developer</p>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Салихов Роман</h3>
+                        <p class="text-green-600 font-medium mb-4">Backend Разработчик</p>
                         <p class="text-gray-600">Эксперт по разработке серверной части и оптимизации баз данных</p>
                     </div>
                 </div>
 
                 <!-- Разработчик 3 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-xl transition-all duration-300">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-xl transition-all duration-300 team-card">
                     <div class="relative overflow-hidden">
                         <img src="{{ asset('image/team.jpg') }}" 
                              alt="Full Stack Developer" 
@@ -515,8 +557,8 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Дмитрий Сидоров</h3>
-                        <p class="text-purple-600 font-medium mb-4">Full Stack Developer</p>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Коробков Андрей</h3>
+                        <p class="text-purple-600 font-medium mb-4">Full Stack Разработчик</p>
                         <p class="text-gray-600">Разработчик полного цикла с опытом создания комплексных веб-приложений</p>
                     </div>
                 </div>
@@ -525,7 +567,7 @@
     </section>
 
     <!-- Контакты -->
-    <section id="contact" class="p-4 md:p-6 bg-white rounded-lg shadow-md mt-4 mx-2 md:mx-4">
+    <section id="contact" class="p-4 md:p-6 bg-white rounded-lg shadow-md my-4">
         <h2 class="text-2xl font-bold text-center mb-8">Свяжитесь с нами</h2>
         <div class="max-w-2xl mx-auto px-2 md:px-6">
             <form action="/submit-form" method="post" class="space-y-6">
@@ -651,84 +693,8 @@
             </div>
         </div>
     </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const slider = document.getElementById('reviewsSlider');
-            const slides = slider.children;
-            const prevButton = document.getElementById('prevButton');
-            const nextButton = document.getElementById('nextButton');
-            const dots = document.querySelectorAll('.slider-dot');
-            
-            let currentSlide = 0;
-            const slidesToShow = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
-            const slideWidth = 100 / slidesToShow;
-            
-            Array.from(slides).forEach(slide => {
-                slide.style.width = `${slideWidth}%`;
-            });
-
-            function updateSlider() {
-                slider.style.transform = `translateX(-${currentSlide * slideWidth}%)`;
-                
-                dots.forEach((dot, index) => {
-                    dot.classList.toggle('bg-blue-500', index === currentSlide);
-                });
-            }
-
-            prevButton.addEventListener('click', () => {
-                currentSlide = Math.max(currentSlide - 1, 0);
-                updateSlider();
-            });
-
-            nextButton.addEventListener('click', () => {
-                currentSlide = Math.min(currentSlide + 1, slides.length - slidesToShow);
-                updateSlider();
-            });
-
-            dots.forEach((dot, index) => {
-                dot.addEventListener('click', () => {
-                    currentSlide = index;
-                    updateSlider();
-                });
-            });
-
-            window.addEventListener('resize', () => {
-                const newSlidesToShow = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
-                if (newSlidesToShow !== slidesToShow) {
-                    location.reload();
-                }
-            });
-        });
-    </script>
-    <script>
-        document.getElementById('nav-toggle').addEventListener('click', function() {
-            const nav = document.querySelector('nav ul');
-            nav.classList.toggle('hidden');
-        });
-
-        let lastScrollTop = 0;
-        const header = document.querySelector('header');
-        
-        window.addEventListener('scroll', function() {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            
-            if (scrollTop > lastScrollTop && scrollTop > 100) {
-                header.classList.add('header-hidden');
-            } else {
-                header.classList.remove('header-hidden');
-            }
-            
-            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-        });
-
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <script src="{{ asset('js/slider.js') }}"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
+    <script src="{{ asset('js/about.js') }}"></script>
 </body>
 </html>
